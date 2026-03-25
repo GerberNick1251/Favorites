@@ -8,11 +8,11 @@
 import Foundation
 import SwiftUI
 
-class FavoritesViewModel {
+class FavoritesViewModel : ObservableObject {
     
-    var cities: [CityModel] = sampleCities
-    var hobbies: [HobbyModel] = sampleHobbies
-    var books: [BookModel] = sampleBooks
+    @Published var cities: [CityModel] = sampleCities
+    @Published var hobbies: [HobbyModel] = sampleHobbies
+    @Published var books: [BookModel] = sampleBooks
     
     
     
