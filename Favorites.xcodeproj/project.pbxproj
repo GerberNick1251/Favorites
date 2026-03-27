@@ -17,7 +17,6 @@
 		FE97D1512F74751200671BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE97D1532F74751200671BC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE97D1542F74751200671BC0 /* FavoritesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesApp.swift; sourceTree = "<group>"; };
-		FE97D18D2F748DB600671BC0 /* Favorites.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Favorites.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -74,7 +73,6 @@
 				FE97D1512F74751200671BC0 /* Assets.xcassets */,
 				FE97D1532F74751200671BC0 /* ContentView.swift */,
 				FE97D1542F74751200671BC0 /* FavoritesApp.swift */,
-				FE97D18D2F748DB600671BC0 /* Favorites.xcodeproj */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
