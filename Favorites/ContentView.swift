@@ -25,7 +25,7 @@ struct ContentView: View {
             Tab("Favorites", systemImage: "star.fill", value: .favorites) {
                 FavoritesView()
             }
-            Tab("Settings", systemImage: "gearshpae", value: .settings) {
+            Tab("Settings", systemImage: "gearshape", value: .settings) {
                 SettingsView()
             }
         }
