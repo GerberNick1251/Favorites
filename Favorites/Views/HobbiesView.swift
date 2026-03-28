@@ -11,12 +11,20 @@ struct HobbiesView: View {
     
     @EnvironmentObject var favorites: FavoritesViewModel
     @Binding var searchText: String
+    var viewType : String
     
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(favorites.filteredHobbies(searchText: searchText)) {hobby in
-                    HobbyRowView(hobby: hobby)
+                if viewType == "Home" {
+                    ForEach(favorites.filteredHobbies(searchText: searchText)) {hobby in
+                        HobbyRowView(hobby: hobby)
+                    }
+                }
+                else {
+                    ForEach(favorites.filteredHobbiesFav(searchText: searchText)) {hobby in
+                        HobbyRowView(hobby: hobby)
+                    }
                 }
             }
             .padding()

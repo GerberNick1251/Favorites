@@ -11,12 +11,20 @@ struct CitiesView: View {
     
     @EnvironmentObject var favorites: FavoritesViewModel
     @Binding var searchText: String
+    var viewType : String
     
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(favorites.filteredCities(searchText: searchText)) { city in
-                    CityCardView(city: city)
+                if viewType == "Home" {
+                    ForEach(favorites.filteredCities(searchText: searchText)) { city in
+                        CityCardView(city: city)
+                    }
+                }
+                else {
+                    ForEach(favorites.filteredCitiesFav(searchText: searchText)){ city in
+                        CityCardView(city: city)
+                    }
                 }
             }
             .padding()
@@ -25,6 +33,6 @@ struct CitiesView: View {
 }
 
 #Preview {
-    CitiesView(searchText: .constant(""))
+    CitiesView(searchText: .constant(""), viewType: "Home")
         .environmentObject(FavoritesViewModel())
 }

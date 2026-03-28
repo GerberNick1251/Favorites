@@ -37,6 +37,19 @@ class CategoryManager<T: Favoritable> {
         }
     }
     
+    func filteredFavorites(items: [T], searchText: String) -> [T] {
+        if searchText.isEmpty {
+            return items.filter {
+                $0.isFavorite == true
+            }
+        }
+        else {
+            return items.filter {
+                $0.searchableText.lowercased().contains(searchText.lowercased()) && $0.isFavorite == true
+            }
+        }
+    }
+    
     func loadFavoriteIds() -> [Int] {
         return UserDefaults.standard.array(forKey: storageKey) as? [Int] ?? []
     }

@@ -10,12 +10,20 @@ import SwiftUI
 struct BooksView: View {
     @EnvironmentObject var favorites: FavoritesViewModel
     @Binding var searchText: String
+    var viewType : String
     
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(favorites.filteredBooks(searchText: searchText)) {book in
-                    BookRowView(book: book)
+                if viewType == "Home" {
+                    ForEach(favorites.filteredBooks(searchText: searchText)) {book in
+                        BookRowView(book: book)
+                    }
+                }
+                else {
+                    ForEach(favorites.filteredBooksFav(searchText: searchText)) {book in
+                        BookRowView(book: book)
+                    }
                 }
             }
             .padding()
