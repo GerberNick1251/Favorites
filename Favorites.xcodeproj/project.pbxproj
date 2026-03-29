@@ -17,6 +17,7 @@
 		FE97D1512F74751200671BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE97D1532F74751200671BC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE97D1542F74751200671BC0 /* FavoritesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesApp.swift; sourceTree = "<group>"; };
+		FEAD1CD02F78A6CA00717A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -67,6 +68,7 @@
 		FE97D1552F74751200671BC0 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				FEAD1CD02F78A6CA00717A15 /* Info.plist */,
 				FE97D1712F74840E00671BC0 /* Models */,
 				FE97D17D2F74842100671BC0 /* ViewModels */,
 				FE97D1782F74841400671BC0 /* Views */,
@@ -293,6 +295,7 @@
 				DEVELOPMENT_TEAM = JA95FP3USP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Favorites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +324,7 @@
 				DEVELOPMENT_TEAM = JA95FP3USP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Favorites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
